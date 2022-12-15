@@ -1,0 +1,20 @@
+// Шапка сторінки
+
+.header {
+  position: relative;
+  border-bottom: 1px solid #ececec;
+  position: relative;
+
+  &__container {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 767px) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+  }
+}

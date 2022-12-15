@@ -1,0 +1,55 @@
+/* Чим ми займаємося */
+
+@media screen and (max-width: 1199px) {
+  .doing {
+    display: none;
+  }
+}
+
+.doing {
+  padding-bottom: 94px;
+
+  &__title {
+    font-size: 28px;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.17;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    margin-left: -30px;
+    position: relative;
+  }
+
+  &__item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+  }
+
+  &__variation {
+    display: flex;
+    position: absolute;
+    width: calc(100% / 3 - 30px);
+    margin-right: 30px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    opacity: 0.8;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+  }
+
+  &__name {
+    color: #ffffff;
+    line-height: 1.17;
+    font-weight: 700;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,68 @@
+// Наші переваги та вміння
+
+.benefit {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  line-height: 1.17;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 10px;
+
+  &__items {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      margin: -15px;
+    }
+  }
+
+  &__item {
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 8 * 15px) / 4);
+      margin: 15px;
+    }
+  }
+}
+
+.benefit__item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+
+.sprite--icon {
+  display: flex;
+  max-width: 450px;
+  height: 120px;
+  background-color: getColor("team");
+  margin-bottom: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+.benefit__description {
+  line-height: 1.71;
+  color: #757575;
+}

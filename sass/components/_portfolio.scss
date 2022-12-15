@@ -1,0 +1,99 @@
+/* Портфоліо */
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+
+  &__item {
+    @media screen and (max-width: 767px) {
+      margin: 15px;
+      flex-basis: calc((100% - 2 * 15px) / 1);
+    }
+    @media screen and (min-width: 768px) {
+      margin: 15px;
+      flex-basis: calc((100% - 4 * 15px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      margin: 15px;
+      flex-basis: calc((100% - 6 * 15px) / 3);
+    }
+  }
+
+  &__link {
+    display: block;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.portfolio__link:hover .portfolio--overlay {
+  transform: translateY(0);
+}
+
+.portfolio__link:hover .portfolio--action {
+  opacity: 90%;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio--image {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio--overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio--action {
+  opacity: 1;
+  position: absolute;
+  display: flex;
+  /* transform: translate(-50%, 50%); */
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #ffffff;
+  top: 63px;
+  left: 24px;
+  right: 24px;
+  bottom: 63px;
+  font-size: 18px;
+  line-height: 1.56;
+}
+
+.portfolio__content {
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px;
+  border-style: solid;
+  border-color: #eeeeee;
+}
+
+.portfolio__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.portfolio__type {
+  font-size: 16px;
+  line-height: 1.88;
+  color: getColor("paragraph-color");
+}
