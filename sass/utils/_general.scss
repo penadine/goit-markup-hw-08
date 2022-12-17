@@ -4,6 +4,9 @@ body {
   font-size: 14px;
   color: getColor("paragraph-color");
   letter-spacing: 0.03em;
+  @media screen and (min-width: 480px) {
+    overflow-x: hidden;
+  }
 }
 
 a {
