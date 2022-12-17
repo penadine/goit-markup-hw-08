@@ -25,105 +25,114 @@
     <header class="header">
       <!-- Навігація по сайту -->
       <div class="container header__container">
-        <a href="./index.html" class="logo">
-          Web<span class="logo--black">Studio</span>
-        </a>
         <nav class="navigation">
-          <ul class="navigation__choiсe">
-            <li class="navigation__item">
-              <a href="./index.html" class="navigation__link"> Студія </a>
-            </li>
-            <li class="navigation__item">
-              <a
-                href="./portfolio.html"
-                class="navigation__link navigation__link--current"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Контакти</a>
-            </li>
-          </ul>
+          <div class="navigation__logo">
+            <a href="./index.html" class="logo">
+              Web<span class="logo--black">Studio</span>
+            </a>
+          </div>
+          <div class="navigation__desk">
+            <ul class="navigation__choiсe">
+              <li class="navigation__item">
+                <a
+                  href="./index.html"
+                  class="navigation__link navigation__link--current"
+                >
+                  Студія
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="./portfolio.html" class="navigation__link"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Контакти</a>
+              </li>
+            </ul>
 
-          <ul class="navigation__contacts">
-            <li class="navigation__item">
-              <a href="mailto:info@devstudio.com" class="navigation__mail">
-                <svg class="navigation__mail--icon" width="16" height="12">
-                  <text>mail</text>
-                  <use href="./images/icons.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a href="tel:+380961111111" class="navigation__tel">
-                <svg class="navigation__tel--icon" width="10" height="16">
-                  <text>smartphone</text>
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <button
-          type="button"
-          class="navigation__button is-open"
-          aria-expended="false"
-          aria-controls="menu-container"
-          data-menu-button
-        >
-          <svg width="40" height="40" aria-label="Мобільне меню">
-            <use
-              class="icon__cross"
-              href="./images/icons.svg#icon-menu_40px"
-            ></use>
-            <use
-              class="icon__menu"
-              href="./images/icons.svg#icon-close_40px"
-            ></use>
-          </svg>
-        </button>
-        <nav class="navigation__mobile" id="menu-container" data-menu>
-          <ul class="navigation__choiсe">
-            <li class="navigation__item">
-              <a href="./index.html" class="navigation__link"> Студія </a>
-            </li>
-            <li class="navigation__item">
-              <a
-                href="./portfolio.html"
-                class="navigation__link navigation__link--current"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Контакти</a>
-            </li>
-          </ul>
-          <ul class="navigation__contacts">
-            <li class="navigation__item">
-              <a href="tel:+380961111111" class="navigation__tel">
-                +38 096 111 11 11
-              </a>
-            </li>
-            <li class="navigation__item">
-              <a href="mailto:info@devstudio.com" class="navigation__mail">
-                info@devstudio.com
-              </a>
-            </li>
-          </ul>
-          <ul class="navigation__socials">
-            <li class="navigation__social">
-              Instagram<spam class="line">|</spam>
-            </li>
-            <li class="navigation__social">
-              Twitter<spam class="line">|</spam>
-            </li>
-            <li class="navigation__socal">
-              Facebook<spam class="line">|</spam>
-            </li>
-            <li class="navigation__social">Linkedin</li>
-          </ul>
+            <ul class="navigation__contacts">
+              <li class="navigation__item">
+                <a href="mailto:info@devstudio.com" class="navigation__mail">
+                  <svg class="navigation__mail--icon" width="16" height="12">
+                    <text>mail</text>
+                    <use href="./images/icons.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="tel:+380961111111" class="navigation__tel">
+                  <svg class="navigation__tel--icon" width="10" height="16">
+                    <text>smartphone</text>
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button
+            type="button"
+            class="navigation__button is-open"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg width="40" height="40" aria-label="Мобільне меню">
+              <use
+                class="icon__cross"
+                href="./images/icons.svg#icon-menu_40px"
+              ></use>
+              <use
+                class="icon__menu"
+                href="./images/icons.svg#icon-close_40px"
+              ></use>
+            </svg>
+          </button>
+          <div class="navigation__mobile" id="menu-container" data-menu>
+            <ul class="navigation__choiсe">
+              <li class="navigation__item">
+                <a
+                  href="./index.html"
+                  class="navigation__link navigation__link--current"
+                >
+                  Студія
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="./portfolio.html" class="navigation__link"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Контакти</a>
+              </li>
+            </ul>
+            <ul class="navigation__contacts">
+              <li class="navigation__item">
+                <a href="tel:+380961111111" class="navigation__tel">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="mailto:info@devstudio.com" class="navigation__mail">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="navigation__socials">
+              <li class="navigation__social">
+                Instagram<span class="line">|</span>
+              </li>
+              <li class="navigation__social">
+                Twitter<span class="line">|</span>
+              </li>
+              <li class="navigation__socal">
+                Facebook<span class="line">|</span>
+              </li>
+              <li class="navigation__social">Linkedin</li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -188,24 +197,17 @@
                 class="portfolio__link"
               >
                 <div class="portfolio--image">
-                  <picture>
-                    <source
-                      srcset="./images/portfolio1_mob.jpg"
-                      sizes="(max-width: 767px) 450px 100vw"
-                    />
-                    <source
-                      srcset="./images/portfolio1_tab.jpg"
-                      sizes="(min-width: 768px) 354px 100vw"
-                    />
-                    <source
-                      srcset="./images/portfolio1.jpg"
-                      sizes="(min-width: 1200px) 370px 100vw"
-                    />
-                    <img
-                      src="./images/portfolio1.jpg"
-                      alt="на фото веб-сайт Технокряк"
-                    />
-                  </picture>
+                  <img
+                    srcset="
+                      ./images/portfolio1_des.jpg 370w,
+                      ./images/portfolio1_tab.jpg 354w,
+                      ./images/portfolio1_mob.jpg 450w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio1_mob.jpg"
+                    alt="на фото веб-сайт Технокряк"
+                    width="450"
+                  />
 
                   <div class="portfolio--overlay">
                     <div class="portfolio--action">
@@ -232,9 +234,15 @@
               >
                 <div class="portfolio--image">
                   <img
-                    src="./images/portfolio2.jpg"
+                    srcset="
+                      ./images/portfolio2_des.jpg 370w,
+                      ./images/portfolio2_tab.jpg 354w,
+                      ./images/portfolio2_mob.jpg 450w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio2_mob.jpg"
                     alt="на фото дизайн постера New Orlean vs Golden Star"
-                    width="370"
+                    width="450"
                   />
                   <div class="portfolio--overlay">
                     <div class="portfolio--action">
@@ -263,9 +271,15 @@
               >
                 <div class="portfolio--image">
                   <img
-                    src="./images/portfolio3.jpg"
+                    srcset="
+                      ./images/portfolio3_des.jpg 370w,
+                      ./images/portfolio3_tab.jpg 354w,
+                      ./images/portfolio3_mob.jpg 450w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio3_mob.jpg"
                     alt="на фото додаток ресторану Seafood"
-                    width="370"
+                    width="450"
                   />
                   <div class="portfolio--overlay">
                     <div class="portfolio--action">
@@ -292,9 +306,15 @@
               >
                 <div class="portfolio--image">
                   <img
-                    src="./images/portfolio4.jpg"
+                    srcset="
+                      ./images/portfolio4_des.jpg 370w,
+                      ./images/portfolio4_tab.jpg 354w,
+                      ./images/portfolio4_mob.jpg 450w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio4_mob.jpg"
                     alt="на фото маркетинг проєкту Prime"
-                    width="370"
+                    width="450"
                   />
                   <div class="portfolio--overlay">
                     <div class="portfolio--action">
@@ -321,9 +341,15 @@
               >
                 <div class="portfolio--image">
                   <img
-                    src="./images/portfolio5.jpg"
+                    srcset="
+                      ./images/portfolio5_des.jpg 370w,
+                      ./images/portfolio5_tab.jpg 354w,
+                      ./images/portfolio5_mob.jpg 450w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio5_mob.jpg"
                     alt="на фото додаток проєкту Boxes"
-                    width="370"
+                    width="450"
                   />
                   <div class="portfolio--overlay">
                     <div class="portfolio--action">
@@ -350,9 +376,15 @@
               >
                 <div class="portfolio--image">
                   <img
-                    src="./images/portfolio6.jpg"
+                    srcset="
+                      ./images/portfolio6_des.jpg 370w,
+                      ./images/portfolio6_tab.jpg 354w,
+                      ./images/portfolio6_mob.jpg 450w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio6_mob.jpg"
                     alt="на фото веб-сайт Inspiration has no Borders"
-                    width="370"
+                    width="450"
                   />
                   <div class="portfolio--overlay">
                     <div class="portfolio--action">
@@ -379,9 +411,15 @@
               >
                 <div class="portfolio--image">
                   <img
-                    src="./images/portfolio7.jpg"
+                    srcset="
+                      ./images/portfolio7_des.jpg 370w,
+                      ./images/portfolio7_tab.jpg 354w,
+                      ./images/portfolio7_mob.jpg 450w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio7_mob.jpg"
                     alt="на фото дизайн видання Limited Edition"
-                    width="370"
+                    width="450"
                   />
                   <div class="portfolio--overlay">
                     <div class="portfolio--action">
@@ -408,9 +446,15 @@
               >
                 <div class="portfolio--image">
                   <img
-                    src="./images/portfolio8.jpg"
+                    srcset="
+                      ./images/portfolio8_des.jpg 370w,
+                      ./images/portfolio8_tab.jpg 354w,
+                      ./images/portfolio8_mob.jpg 450w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio8_mob.jpg"
                     alt="на фото маркетин проєкту LAB"
-                    width="370"
+                    width="450"
                   />
                   <div class="portfolio--overlay">
                     <div class="portfolio--action">
@@ -437,9 +481,15 @@
               >
                 <div class="portfolio--image">
                   <img
-                    src="./images/portfolio9.jpg"
+                    srcset="
+                      ./images/portfolio9_des.jpg 370w,
+                      ./images/portfolio9_tab.jpg 354w,
+                      ./images/portfolio9_mob.jpg 450w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio9_mob.jpg"
                     alt="на фото додаток Growing Business"
-                    width="370"
+                    width="450"
                   />
                   <div class="portfolio--overlay">
                     <div class="portfolio--action">

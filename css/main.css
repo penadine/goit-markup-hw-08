@@ -82,31 +82,15 @@ text {
   }
 }
 
-.logo {
+.logo, .navigation__logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   color: #2196f3;
   font-size: 24px;
   line-height: 1.17;
 }
-@media screen and (min-width: 768px) {
-  .logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-}
 @media screen and (min-width: 1200px) {
-  .logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+  .logo, .navigation__logo {
     font-size: 26px;
     line-height: 1.19;
   }
@@ -157,15 +141,6 @@ text {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 @media screen and (max-width: 767px) {
   .header__container {
@@ -184,6 +159,23 @@ text {
 }
 @media screen and (max-width: 767px) {
   .navigation {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.navigation__desk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 93px;
+}
+@media screen and (max-width: 767px) {
+  .navigation__desk {
     display: none;
   }
 }
@@ -232,7 +224,7 @@ text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 114px;
+    margin-right: 95px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -240,7 +232,7 @@ text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 339px;
+    margin-right: 283px;
   }
 }
 
@@ -279,9 +271,6 @@ text {
     font-size: 40px;
     letter-spacing: 0.02em;
     color: #212121;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 @media screen and (min-width: 768px) {
@@ -295,10 +284,8 @@ text {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .navigation__link--current {
-    color: #2196f3;
-  }
+.navigation__link--current {
+  color: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
@@ -315,14 +302,18 @@ text {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navigation__contacts {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+}
 @media screen and (min-width: 1200px) {
   .navigation__contacts {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
   }
 }
 
@@ -353,9 +344,11 @@ text {
   }
 }
 
-@media screen and (min-width: 768px) {
+.navigation__contacts .navigation__mail {
+  color: #757575;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .navigation__contacts .navigation__mail {
-    color: #757575;
     padding-bottom: 10px;
   }
 }
@@ -369,9 +362,6 @@ text {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-transition-property: color, fill;
   transition-property: color, fill;
   -webkit-transition-duration: 250ms;
@@ -462,77 +452,44 @@ text {
   padding-bottom: 200px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero_1x_480.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_1x_480.jpg");
-  max-width: 480px;
 }
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+@media screen and (max-width: 767px) {
   .hero {
-    margin: 0 auto;
-    background-color: #2f303a;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero_1x_480.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_1x_480.jpg");
+  }
+}
+@media screen and (max-width: 767px) and (min-divece-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero_2x_480.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_2x_480.jpg");
-    width: 100%;
-    max-width: 480px;
   }
 }
-@media (min-width: 489px) {
+@media screen and (min-width: 768px) {
   .hero {
-    margin: 0 auto;
-    background-color: #2f303a;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero_1x_768.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_1x_768.jpg");
-    max-width: 768px;
   }
 }
-@media (min-width: 489px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 489px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-divece-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    margin: 0 auto;
-    background-color: #2f303a;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero_2x_768.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_2x_768.jpg");
-    max-width: 768px;
   }
 }
-@media (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .hero {
-    margin: 0 auto;
-    background-color: #2f303a;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero_1x_1600.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_1x_1600.jpg");
-    max-width: 1600px;
   }
 }
-@media (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-divece-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    margin: 0 auto;
-    background-color: #2f303a;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero_2x_1600.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_2x_1600.jpg");
-    max-width: 1600px;
   }
 }
+
 .hero__container {
   text-align: center;
 }
@@ -1166,13 +1123,9 @@ text {
   padding-bottom: 30px;
   padding-left: 32px;
   padding-right: 32px;
-}
-@media screen and (max-width: 767px) {
-  .social__items {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .social__item {
@@ -1234,6 +1187,7 @@ text {
 
 .clients__item {
   margin: 15px;
+  height: 92px;
   -ms-flex-preferred-size: calc((100% - 60px) / 2);
       flex-basis: calc((100% - 60px) / 2);
 }
@@ -1330,7 +1284,7 @@ text {
 /* 1. Блок з адресою */
 /* лого в підвалі */
 @media screen and (min-width: 768px) {
-  .logo {
+  .logo, .navigation__logo {
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1338,6 +1292,13 @@ text {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo, .navigation__logo {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
