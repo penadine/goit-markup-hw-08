@@ -6,6 +6,11 @@ body {
   color: getColor("paragraph-color");
   letter-spacing: 0.03em;
 }
+@media screen and (min-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+}
 
 a {
   text-decoration: none;
