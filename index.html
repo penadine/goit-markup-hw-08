@@ -74,24 +74,34 @@
               </li>
             </ul>
           </div>
+
+          <!-- Мобільне меню -->
           <button
-            type="button"
-            class="navigation__button is-open"
-            aria-controls="menu-container"
-            data-menu-button
+            class="navigation__button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
           >
-            <svg width="40" height="40" aria-label="Мобільне меню">
-              <use
-                class="icon__cross"
-                href="./images/icons.svg#icon-menu_40px"
-              ></use>
-              <use
-                class="icon__menu"
-                href="./images/icons.svg#icon-close_40px"
-              ></use>
+            <svg
+              class="menu__icon--open"
+              width="40"
+              height="40"
+              aria-label="Мобільне меню"
+            >
+              <use href="./images/icons.svg#icon-menu_40px"></use>
             </svg>
           </button>
-          <div class="navigation__mobile" id="menu-container" data-menu>
+
+          <div class="navigation__mobile js-menu-container" id="mobile-menu">
+            <button class="navigation__button js-close-menu">
+              <svg
+                class="menu__icon--close"
+                width="40"
+                height="40"
+                aria-label="Мобільне меню"
+              >
+                <use href="./images/icons.svg#icon-close_40px"></use>
+              </svg>
+            </button>
             <ul class="navigation__choiсe">
               <li class="navigation__item">
                 <a

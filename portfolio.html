@@ -21,121 +21,131 @@
   </head>
 
   <body>
-    <!-- Шапка сторінки -->
-    <header class="header">
-      <!-- Навігація по сайту -->
-      <div class="container header__container">
-        <nav class="navigation">
-          <div class="navigation__logo">
-            <a href="./index.html" class="logo">
-              Web<span class="logo--black">Studio</span>
-            </a>
-          </div>
-          <div class="navigation__desk">
-            <ul class="navigation__choiсe">
-              <li class="navigation__item">
-                <a
-                  href="./index.html"
-                  class="navigation__link navigation__link--current"
-                >
-                  Студія
-                </a>
-              </li>
-              <li class="navigation__item">
-                <a href="./portfolio.html" class="navigation__link"
-                  >Портфоліо</a
-                >
-              </li>
-              <li class="navigation__item">
-                <a href="#" class="navigation__link">Контакти</a>
-              </li>
-            </ul>
+  <!-- Шапка сторінки -->
+  <header class="header">
+    <!-- Навігація по сайту -->
+    <div class="container header__container">
+      <nav class="navigation">
+        <div class="navigation__logo">
+          <a href="./index.html" class="logo">
+            Web<span class="logo--black">Studio</span>
+          </a>
+        </div>
+        <div class="navigation__desk">
+          <ul class="navigation__choiсe">
+            <li class="navigation__item">
+              <a
+                href="./index.html"
+                class="navigation__link navigation__link--current"
+              >
+                Студія
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Контакти</a>
+            </li>
+          </ul>
 
-            <ul class="navigation__contacts">
-              <li class="navigation__item">
-                <a href="mailto:info@devstudio.com" class="navigation__mail">
-                  <svg class="navigation__mail--icon" width="16" height="12">
-                    <text>mail</text>
-                    <use href="./images/icons.svg#icon-mail"></use>
-                  </svg>
-                  info@devstudio.com
-                </a>
-              </li>
-              <li class="navigation__item">
-                <a href="tel:+380961111111" class="navigation__tel">
-                  <svg class="navigation__tel--icon" width="10" height="16">
-                    <text>smartphone</text>
-                    <use href="./images/icons.svg#icon-smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11
-                </a>
-              </li>
-            </ul>
-          </div>
-          <button
-            type="button"
-            class="navigation__button is-open"
-            aria-controls="menu-container"
-            data-menu-button
+          <ul class="navigation__contacts">
+            <li class="navigation__item">
+              <a href="mailto:info@devstudio.com" class="navigation__mail">
+                <svg class="navigation__mail--icon" width="16" height="12">
+                  <text>mail</text>
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="tel:+380961111111" class="navigation__tel">
+                <svg class="navigation__tel--icon" width="10" height="16">
+                  <text>smartphone</text>
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Мобільне меню -->
+        <button
+          class="navigation__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="menu__icon--open"
+            width="40"
+            height="40"
+            aria-label="Мобільне меню"
           >
-            <svg width="40" height="40" aria-label="Мобільне меню">
-              <use
-                class="icon__cross"
-                href="./images/icons.svg#icon-menu_40px"
-              ></use>
-              <use
-                class="icon__menu"
-                href="./images/icons.svg#icon-close_40px"
-              ></use>
+            <use href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+
+        <div class="navigation__mobile js-menu-container" id="mobile-menu">
+          <button class="navigation__button js-close-menu">
+            <svg
+              class="menu__icon--close"
+              width="40"
+              height="40"
+              aria-label="Мобільне меню"
+            >
+              <use href="./images/icons.svg#icon-close_40px"></use>
             </svg>
           </button>
-          <div class="navigation__mobile" id="menu-container" data-menu>
-            <ul class="navigation__choiсe">
-              <li class="navigation__item">
-                <a
-                  href="./index.html"
-                  class="navigation__link navigation__link--current"
-                >
-                  Студія
-                </a>
-              </li>
-              <li class="navigation__item">
-                <a href="./portfolio.html" class="navigation__link"
-                  >Портфоліо</a
-                >
-              </li>
-              <li class="navigation__item">
-                <a href="#" class="navigation__link">Контакти</a>
-              </li>
-            </ul>
-            <ul class="navigation__contacts">
-              <li class="navigation__item">
-                <a href="tel:+380961111111" class="navigation__tel">
-                  +38 096 111 11 11
-                </a>
-              </li>
-              <li class="navigation__item">
-                <a href="mailto:info@devstudio.com" class="navigation__mail">
-                  info@devstudio.com
-                </a>
-              </li>
-            </ul>
-            <ul class="navigation__socials">
-              <li class="navigation__social">
-                Instagram<span class="line">|</span>
-              </li>
-              <li class="navigation__social">
-                Twitter<span class="line">|</span>
-              </li>
-              <li class="navigation__socal">
-                Facebook<span class="line">|</span>
-              </li>
-              <li class="navigation__social">Linkedin</li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
+          <ul class="navigation__choiсe">
+            <li class="navigation__item">
+              <a
+                href="./index.html"
+                class="navigation__link navigation__link--current"
+              >
+                Студія
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="./portfolio.html" class="navigation__link"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Контакти</a>
+            </li>
+          </ul>
+          <ul class="navigation__contacts">
+            <li class="navigation__item">
+              <a href="tel:+380961111111" class="navigation__tel">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="mailto:info@devstudio.com" class="navigation__mail">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="navigation__socials">
+            <li class="navigation__social">
+              Instagram<span class="line">|</span>
+            </li>
+            <li class="navigation__social">
+              Twitter<span class="line">|</span>
+            </li>
+            <li class="navigation__socal">
+              Facebook<span class="line">|</span>
+            </li>
+            <li class="navigation__social">Linkedin</li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
 
     <!-- Унікальний контент сторінки -->
     <main>

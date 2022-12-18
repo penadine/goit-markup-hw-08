@@ -13,9 +13,13 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   z-index: 2;
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 480px) {
     height: 609px;
     width: 450px;
+  }
+  @media screen and (max-width: 479px) {
+    height: 640px;
+    width: 290px;
   }
 }
 
@@ -64,8 +68,11 @@
   line-height: 1.17;
   letter-spacing: 0.01em;
   width: 448px;
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 480px) {
     width: 370px;
+  }
+  @media screen and (max-width: 479px) {
+    width: 210px;
   }
 }
 
@@ -166,7 +173,7 @@
 .confirm {
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: getColor("paragraph-color");
@@ -216,10 +223,6 @@
 
 .confirm__contract {
   margin-left: 8.38px;
-  @media screen and (max-width: 1199px) {
-    font-size: 12px;
-    line-height: 1.17;
-  }
 }
 
 .contract {
